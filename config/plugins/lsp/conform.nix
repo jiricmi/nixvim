@@ -98,9 +98,14 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
+          rust = [ "rustfmt" ];
+          c = [ "clang_format" ];
           python = [
             "black"
             "isort"
+          ];
+          typst = [
+            "typstfmt"
           ];
           lua = [ "stylua" ];
           nix = [ "nixfmt-rfc-style" ];
@@ -158,6 +163,15 @@
           };
           bicep = {
             command = "${lib.getExe pkgs.bicep}";
+          };
+          #typstfmt = {
+          #  command = "${lib.getExe pkgs.typstfmt}";
+          #};
+          clang_format = {
+            command = "${pkgs.clang-tools}/bin/clang-format";
+          };
+          rustfmt = {
+            command = "${lib.getExe pkgs.rustfmt}";
           };
           #yamlfmt = {
           #  command = "${lib.getExe pkgs.yamlfmt}";
