@@ -17,9 +17,6 @@
         lua_ls = {
           enable = true;
         };
-        nil_ls = {
-          enable = true;
-        };
         ts_ls = {
           enable = true;
         };
@@ -32,15 +29,27 @@
         gopls = {
           enable = true;
         };
-        terraformls = {
-          enable = true;
-        };
         ansiblels = {
           enable = true;
         };
         jsonls = {
           enable = true;
         };
+        tinymist = {
+          enable = true;
+        };
+        cmake = {
+          enable = true;
+        };
+        clangd = {
+          enable = true;
+        };
+        rust_analyzer = {
+          enable = true;
+          installCargo = true;
+          installRustc = true;
+        };
+
         helm_ls = {
           enable = true;
           extraOptions = {
