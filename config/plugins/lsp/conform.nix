@@ -126,8 +126,6 @@
             "shellharden"
             "shfmt"
           ];
-          json = [ "jq" ];
-          "_" = [ "trim_whitespace" ];
         };
 
         formatters = {
@@ -142,9 +140,6 @@
           };
           alejandra = {
             command = "${lib.getExe pkgs.alejandra}";
-          };
-          jq = {
-            command = "${lib.getExe pkgs.jq}";
           };
           prettierd = {
             command = "${lib.getExe pkgs.prettierd}";
