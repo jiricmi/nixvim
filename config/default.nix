@@ -19,7 +19,6 @@ _: {
 
     # Debugger
     ./plugins/debugger/dap.nix
-    ./plugins/debugger/dap-ui.nix
 
     # Editor plugins and configurations
     ./plugins/editor/neo-tree.nix
