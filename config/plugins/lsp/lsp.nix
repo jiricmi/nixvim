@@ -161,7 +161,8 @@
     )
 
     vim.diagnostic.config{
-      float={border=_border}
+      float={border=_border},
+      virtual_text = true
     };
 
     require('lspconfig.ui.windows').default_options = {
