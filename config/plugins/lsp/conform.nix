@@ -78,16 +78,7 @@
         '';
         notify_on_error = true;
         formatters_by_ft = {
-          html = {
-            __unkeyed-1 = "prettierd";
-            __unkeyed-2 = "prettier";
-            stop_after_first = true;
-          };
-          jinja = {
-            __unkeyed-1 = "prettierd";
-            __unkeyed-2 = "prettier";
-            stop_after_first = true;
-          };
+          
           css = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
