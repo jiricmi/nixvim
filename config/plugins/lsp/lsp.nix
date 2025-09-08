@@ -13,6 +13,7 @@
       servers = {
         html = {
           enable = true;
+          filetypes = [ "html" "jinja" "jinja.html" ];
         };
         lua_ls = {
           enable = true;

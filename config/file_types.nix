@@ -33,4 +33,16 @@
       command = "set ft=bicep";
     }
   ];
+
+  files."ftdetect/htmljinja.lua".autoCmd = [
+    {
+      group = "filetypes";
+      event = [
+        "BufRead"
+        "BufNewFile"
+      ];
+      pattern = [ "*.html" ];
+      command = "set ft=jinja.html";
+    }
+  ];
 }
