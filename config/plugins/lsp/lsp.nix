@@ -50,6 +50,10 @@
           installRustc = true;
         };
 
+        ocamllsp = {
+          enable = true;
+        };
+
         helm_ls = {
           enable = true;
           extraOptions = {
