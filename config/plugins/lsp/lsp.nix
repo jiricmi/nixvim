@@ -51,6 +51,8 @@
         };
         zls = {
           enable = true;
+          package = pkgs.zls;
+          cmd = [ "${pkgs.zls}/bin/zls" ];
         };
         ocamllsp = {
           enable = true;
