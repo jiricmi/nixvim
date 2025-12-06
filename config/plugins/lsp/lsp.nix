@@ -49,7 +49,9 @@
           installCargo = true;
           installRustc = true;
         };
-
+        zls = {
+          enable = true;
+        };
         ocamllsp = {
           enable = true;
         };
